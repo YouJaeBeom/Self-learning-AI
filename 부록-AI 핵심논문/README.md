@@ -16,7 +16,7 @@
 
 ## 읽는 법
 
-각 테마 폴더(`Tnn_…` 또는 `태스크별_방법론/nn_…`)는 한 장입니다.
+각 테마 폴더(`nn_…` 또는 `11_태스크별_방법론/nn_…`)는 한 장입니다.
 
 1. 테마 `README.md` — 어떤 문제인가, 왜 중요한가, 바이블에서 최신으로의 흐름.
 2. 논문별 글(번호순) — 한 편당 한 글. 배경, 핵심 아이디어(비유 포함), 방법(수식 해설·표·텍스트 다이어그램), 임팩트, 한계, 한 줄 요약, 그리고 맨 끝에 참고문헌으로 구성됩니다. 본문에서 참조하는 논문은 `[1]` 형식으로 표기하고, 글 끝의 참고문헌 목록과 매핑됩니다.
@@ -32,16 +32,16 @@
 
 | # | 테마 | 핵심 질문 | 바이블 → 최신 (대표) |
 |:--:|---|---|---|
-| T01 | [시퀀스 아키텍처](./T01_시퀀스_아키텍처/) | "문맥을 어떻게 모델링하나?" | Attention → Mamba·Jamba |
-| T02 | [긴 문맥](./T02_긴_문맥/) | "어떻게 더 길게 보나?" | RoPE·ALiBi → FlashAttn·Ring |
-| T03 | [효율·서빙](./T03_효율과_서빙/) | "어떻게 싸고 빠르게?" | MoE·vLLM → QLoRA·Mixtral |
-| T04 | [정렬·선호학습](./T04_정렬과_선호학습/) | "어떻게 사람 뜻에 맞추나?" | InstructGPT → DPO·GRPO·R1 |
-| T05 | [추론·테스트타임](./T05_추론과_테스트타임/) | "어떻게 더 잘 생각하나?" | CoT·STaR → PRM·o1·R1 |
-| T06 | [검색·지식·환각](./T06_검색과_지식_환각/) | "어떻게 환각을 줄이나?" | RAG·DPR → Self-RAG·GraphRAG |
-| T07 | [에이전트·도구](./T07_에이전트와_도구/) | "어떻게 행동하게 하나?" | ReAct·Toolformer → Reflexion·SWE-bench |
-| T08 | [생성모델](./T08_생성모델/) | "어떻게 생성하나?" | GAN·DDPM → SD·DiT·SD3 |
-| T09 | [멀티모달](./T09_멀티모달/) | "어떻게 보고 듣나?" | CLIP·Flamingo → LLaVA·Qwen2-VL |
-| T10 | [스케일링·데이터·평가](./T10_스케일링_데이터_평가/) | "어떻게 키우고 평가하나?" | Kaplan·Chinchilla → FineWeb·MT-Bench |
+| T01 | [시퀀스 아키텍처](./01_시퀀스_아키텍처/) | "문맥을 어떻게 모델링하나?" | Attention → Mamba·Jamba |
+| T02 | [긴 문맥](./02_긴_문맥/) | "어떻게 더 길게 보나?" | RoPE·ALiBi → FlashAttn·Ring |
+| T03 | [효율·서빙](./03_효율과_서빙/) | "어떻게 싸고 빠르게?" | MoE·vLLM → QLoRA·Mixtral |
+| T04 | [정렬·선호학습](./04_정렬과_선호학습/) | "어떻게 사람 뜻에 맞추나?" | InstructGPT → DPO·GRPO·R1 |
+| T05 | [추론·테스트타임](./05_추론과_테스트타임/) | "어떻게 더 잘 생각하나?" | CoT·STaR → PRM·o1·R1 |
+| T06 | [검색·지식·환각](./06_검색과_지식_환각/) | "어떻게 환각을 줄이나?" | RAG·DPR → Self-RAG·GraphRAG |
+| T07 | [에이전트·도구](./07_에이전트와_도구/) | "어떻게 행동하게 하나?" | ReAct·Toolformer → Reflexion·SWE-bench |
+| T08 | [생성모델](./08_생성모델/) | "어떻게 생성하나?" | GAN·DDPM → SD·DiT·SD3 |
+| T09 | [멀티모달](./09_멀티모달/) | "어떻게 보고 듣나?" | CLIP·Flamingo → LLaVA·Qwen2-VL |
+| T10 | [스케일링·데이터·평가](./10_스케일링_데이터_평가/) | "어떻게 키우고 평가하나?" | Kaplan·Chinchilla → FineWeb·MT-Bench |
 
 ### Part 2 · 태스크별 방법론 (바이블 → 최신)
 
@@ -49,14 +49,14 @@
 
 | # | 태스크 | 바이블 → 최신 (대표) |
 |:--:|---|---|
-| 01 | [분류·회귀](./태스크별_방법론/01_분류와_회귀/) | Random Forest·XGBoost → LightGBM·CatBoost·TabPFN(Nature) |
-| 02 | [군집화](./태스크별_방법론/02_군집화/) | DBSCAN·Spectral → HDBSCAN·Contrastive·SCAN |
-| 03 | [차원축소·표현학습](./태스크별_방법론/03_차원축소와_표현학습/) | t-SNE·UMAP → SimCLR·MAE |
-| 04 | [시계열 분석](./태스크별_방법론/04_시계열_분석/) | Box-Jenkins·DeepAR → N-BEATS·PatchTST·Chronos·TimesFM |
-| 05 | [이상치 탐지](./태스크별_방법론/05_이상치_탐지/) | LOF·OC-SVM·Isolation Forest → Deep SVDD·Anomaly Transformer |
-| 06 | [그래프·GNN](./태스크별_방법론/06_그래프와_GNN/) | DeepWalk·node2vec·GCN·GraphSAGE → GAT·GraphGPS |
-| 07 | [연합학습](./태스크별_방법론/07_연합학습/) | FedAvg·FedProx·Secure Agg → Ditto·FedBN·FederatedScope-LLM |
-| 08 | [컨티뉴얼 러닝](./태스크별_방법론/08_컨티뉴얼_러닝/) | EWC·iCaRL·LwF → L2P·Experience Replay |
+| 01 | [분류·회귀](./11_태스크별_방법론/01_분류와_회귀/) | Random Forest·XGBoost → LightGBM·CatBoost·TabPFN(Nature) |
+| 02 | [군집화](./11_태스크별_방법론/02_군집화/) | DBSCAN·Spectral → HDBSCAN·Contrastive·SCAN |
+| 03 | [차원축소·표현학습](./11_태스크별_방법론/03_차원축소와_표현학습/) | t-SNE·UMAP → SimCLR·MAE |
+| 04 | [시계열 분석](./11_태스크별_방법론/04_시계열_분석/) | Box-Jenkins·DeepAR → N-BEATS·PatchTST·Chronos·TimesFM |
+| 05 | [이상치 탐지](./11_태스크별_방법론/05_이상치_탐지/) | LOF·OC-SVM·Isolation Forest → Deep SVDD·Anomaly Transformer |
+| 06 | [그래프·GNN](./11_태스크별_방법론/06_그래프와_GNN/) | DeepWalk·node2vec·GCN·GraphSAGE → GAT·GraphGPS |
+| 07 | [연합학습](./11_태스크별_방법론/07_연합학습/) | FedAvg·FedProx·Secure Agg → Ditto·FedBN·FederatedScope-LLM |
+| 08 | [컨티뉴얼 러닝](./11_태스크별_방법론/08_컨티뉴얼_러닝/) | EWC·iCaRL·LwF → L2P·Experience Replay |
 
 Part 1의 10개 테마와 Part 2의 8개 트랙을 합쳐, 모든 인용을 [검증 마스터](./_편집실/검증된_논문_마스터.md)·[태스크 마스터](./_편집실/검증된_논문_마스터_태스크별.md)와 대조했습니다. 인용 수치는 본문에서 단정하지 않고 정성 근거로 적었습니다.
 
